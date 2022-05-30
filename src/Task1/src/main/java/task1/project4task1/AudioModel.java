@@ -44,8 +44,8 @@ public class AudioModel {
             URL url = new URL(urlString);
 
             // user and password
-            String user = "apikey";
-            String password = "tktUMSNvZqFbg4Ck2GfKxgLRvzZZPrIjDzifOQ23CLOZ";
+            String user = "USERNAME";
+            String password = "PASSWORD";
 
             // open the connection
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
