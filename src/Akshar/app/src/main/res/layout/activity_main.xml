@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AksharActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="95dp"
+        android:src="@drawable/akshar_logo"
+        app:layout_constraintBottom_toTopOf="@+id/audioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="159dp"
+        android:layout_height="57dp"
+        android:text="SHAR"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <Button
+        android:id="@+id/extract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extract"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected"
+        app:layout_constraintVertical_bias="0.49"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/audioButton"
+        android:layout_width="225dp"
+        android:layout_height="52dp"
+        android:text="select audio"
+        app:layout_constraintBottom_toTopOf="@+id/selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/selected"
+        android:layout_width="352dp"
+        android:layout_height="185dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
